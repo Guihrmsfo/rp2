@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Voucher PUBLIC "-//WebSig Consortium//DTD Voucher v1.0 20000405//EN" "voucher_uni.dtd">
+<Voucher xmlns="http://www.nue.et-inf.uni-siegen.de/websig/">
+	<Hotel xmlns="">
+		<Name>Imaginary London Hotel</Name>
+		<Address>
+			<Number>102</Number>
+			<Street>Euston St.</Street>
+			<City>London</City>
+			<Postcode>12BJ s 1</Postcode>
+			<Country>England</Country>
+		</Address>
+		<ElectronicContact>
+			<Telephone>00447234556789</Telephone>
+			<FAX>00447234556780</FAX>
+			<Email>info@imaginaryhl.com</Email>
+		</ElectronicContact>
+	</Hotel>
+	<Customer xmlns="">
+		<Name>
+			<Person>
+				<Title>Mr.</Title>
+				<First>John</First>
+				<Last>Doe</Last>
+			</Person>
+		</Name>
+		<Address>
+			<Number>12</Number>
+			<Street>Wall St.</Street>
+			<City>New York</City>
+			<Postcode>10023</Postcode>
+			<Country>USA</Country>
+		</Address>
+		<ElectronicContact>
+			<Telephone>+1(202)234-5678</Telephone>
+			<Email>info@myisp.com</Email>
+		</ElectronicContact>
+	</Customer>
+	<TransactionDetails xmlns="">
+		<VoucherNumber priority="high">7890gfd</VoucherNumber>
+		<HotelContact>
+			<Person>
+				<Title>Ms.</Title>
+				<First>Annie</First>
+				<Middle>H.</Middle>
+				<Last>Brewer</Last>
+			</Person>
+		</HotelContact>
+		<DateTimeOfReservation year="1999" month="March" day="173" hour="23" minute="20" second="00" />
+		<Rooms>
+			<TypeOfRoom type="suite" />
+			<NumberOfRooms>1</NumberOfRooms>
+			<TimeOfArrival year="1999" month="January" day="12" hour="12" minute="00" second="00" />
+			<TimeOfDeparture year="1999" month="February" day="12" hour="12" minute="00" second="00" />
+			<Breakfast value="yes" />
+			<Lunch value="no" />
+			<Dinner value="no" />
+			<Price currency="USD">1000</Price>
+		</Rooms>
+		<Rooms>
+			<TypeOfRoom type="single" />
+			<NumberOfRooms>2</NumberOfRooms>
+			<TimeOfArrival year="1999" month="January" day="12" hour="12" minute="00" second="00" />
+			<TimeOfDeparture year="1999" month="February" day="12" hour="12" minute="00" second="00" />
+			<Breakfast value="yes" />
+			<Lunch value="no" />
+			<Dinner value="no" />
+			<Price currency="USD">1000</Price>
+		</Rooms>
+	</TransactionDetails>
+</Voucher>
+

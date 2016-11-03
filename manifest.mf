@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+
+Name: gr/aueb/cs/nlg/ProtegeAuthoringTool/LexiconTab.class
+Tab-Widget: True
+
+Name: gr/aueb/cs/nlg/ProtegeAuthoringTool/MicroplansAndOrderingTab.class
+Tab-Widget: True
+
+Name: gr/aueb/cs/nlg/ProtegeAuthoringTool/TextPreviewsTab.class
+Tab-Widget: True
+
+Name: gr/aueb/cs/nlg/ProtegeAuthoringTool/UserModellingTab.class
+Tab-Widget: True
+
+Name: gr/aueb/cs/nlg/ProtegeAuthoringTool/NLPlugin.class
+Project-Plugin: True
+

@@ -1,0 +1,5 @@
+<dsig:Object Id="to-be-signed">
+      <bar:Baz>
+        <!--  comment -->
+      </bar:Baz>
+    </dsig:Object>

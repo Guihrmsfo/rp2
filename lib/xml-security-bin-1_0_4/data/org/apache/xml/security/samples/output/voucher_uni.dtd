@@ -1,0 +1,80 @@
+<!ENTITY % timedate " year   CDATA  #REQUIRED
+                     month  (January | February | March | April | May | Juny | July | August | Sempember | October | November | December)  #REQUIRED
+                     day    CDATA  #REQUIRED
+                     hour   CDATA  #REQUIRED
+                     minute CDATA  #REQUIRED
+                     second CDATA  #REQUIRED">
+
+<!ENTITY % yesno " value  (yes | no )  #REQUIRED">
+
+<!ELEMENT Voucher  (Hotel , Customer , TransactionDetails )>
+
+<!ELEMENT Hotel  (Name , Address , ElectronicContact )>
+
+<!ELEMENT Customer  (Name , Address , ElectronicContact )>
+
+<!ELEMENT Name  (#PCDATA | Person )*>
+
+<!ELEMENT Person  (Title? , First+ , Middle? , Last )>
+
+<!ELEMENT Title  (#PCDATA )>
+
+<!ELEMENT First  (#PCDATA )>
+
+<!ELEMENT Middle  (#PCDATA )>
+
+<!ELEMENT Last  (#PCDATA )>
+
+<!ELEMENT Address  (Number , Street , City , State? , Postcode , Country )>
+
+<!ELEMENT ElectronicContact  (Telephone , FAX? , Email? )>
+
+<!ELEMENT Number  (#PCDATA )>
+
+<!ELEMENT Street  (#PCDATA )>
+
+<!ELEMENT City  (#PCDATA )>
+
+<!ELEMENT State  (#PCDATA )>
+
+<!ELEMENT Postcode  (#PCDATA )>
+
+<!ELEMENT Country  (#PCDATA )>
+
+<!ELEMENT Telephone  (#PCDATA )>
+
+<!ELEMENT FAX  (#PCDATA )>
+
+<!ELEMENT Email  (#PCDATA )>
+
+<!ELEMENT TransactionDetails  (VoucherNumber , HotelContact , DateTimeOfReservation , Rooms+ )>
+
+<!ELEMENT VoucherNumber  (#PCDATA )>
+<!ATTLIST VoucherNumber  priority  (high | medium | low )  #REQUIRED >
+
+<!ELEMENT HotelContact  (#PCDATA | Person )*>
+
+<!ELEMENT DateTimeOfReservation EMPTY>
+<!ATTLIST DateTimeOfReservation  %timedate; >
+
+<!ELEMENT Rooms  (TypeOfRoom , NumberOfRooms , TimeOfArrival , TimeOfDeparture , Breakfast , Lunch , Dinner , Price )>
+
+<!ELEMENT TypeOfRoom EMPTY>
+<!ATTLIST TypeOfRoom  type  (suite | bungalow | single | double )  #REQUIRED >
+
+<!ELEMENT NumberOfRooms  (#PCDATA )>
+
+<!ELEMENT TimeOfArrival EMPTY>
+<!ATTLIST TimeOfArrival  %timedate; >
+<!ELEMENT TimeOfDeparture EMPTY>
+<!ATTLIST TimeOfDeparture  %timedate; >
+
+<!ELEMENT Breakfast EMPTY>
+<!ATTLIST Breakfast %yesno; >
+<!ELEMENT Lunch EMPTY>
+<!ATTLIST Lunch %yesno; >
+<!ELEMENT Dinner EMPTY>
+<!ATTLIST Dinner %yesno; >
+
+<!ELEMENT Price  (#PCDATA )>
+<!ATTLIST Price  currency CDATA  #REQUIRED >
