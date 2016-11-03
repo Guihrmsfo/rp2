@@ -41,5 +41,6 @@
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/wstx-asl-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/xml-apis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/stanford-ner.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
