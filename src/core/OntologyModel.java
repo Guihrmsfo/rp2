@@ -3,11 +3,14 @@ package core;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
-import com.hp.hpl.jena.ontology.ObjectProperty;
-import com.hp.hpl.jena.ontology.OntClass;
-import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.ontology.*;
 import com.hp.hpl.jena.rdf.model.*;
+import com.hp.hpl.jena.vocabulary.VCARD;
 
 public class OntologyModel {
 
@@ -17,10 +20,13 @@ public class OntologyModel {
 		
 		OntModel model = ModelFactory.createOntologyModel();
 		OntClass trendingTopic = model.createClass( NS + "TrendingTopic" );
-		OntClass title = model.createClass( NS + "Title" );
+		Property date = model.createProperty( NS + "date" );
 		
-		ObjectProperty hasTitle = model.createObjectProperty( NS + "hasTitle");
-		hasTitle.addDomain(trendingTopic);
+		Individual tt = trendingTopic.createIndividual(NS + "tt1");
+		tt.addProperty(VCARD.TITLE, "#Trump");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		Calendar cal = Calendar.getInstance();
+		tt.addProperty(date, dateFormat.format(cal.getTime()));
 		
 		FileWriter fw = new FileWriter("twitter.owl");
 		model.write(fw);
