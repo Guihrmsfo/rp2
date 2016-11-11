@@ -29,6 +29,7 @@ public class Main {
 		TwitterFactory twitterFactory = new TwitterFactory(cb.build());
 		Twitter twitter = twitterFactory.getInstance();
 		List<Status> tweets = new ArrayList<Status>();
+		OntologyModel model = new OntologyModel();
 
 		int x;
 
@@ -38,34 +39,42 @@ public class Main {
 				System.out.println(t.getName());
 
 				Query query = new Query(t.getQuery());
-				query.setCount(3);
+				query.setCount(1);
 				query.setLang("en");
 				query.setResultType(ResultType.popular);
 				QueryResult result = twitter.search(query);
-				
+
+				TrendingTopic trendingTopic = new TrendingTopic(t.getName(), "en");
+				trendingTopic.setTweets(result.getTweets());
+
 				x = 0;
-				for (Status status : result.getTweets()) {
+				for (Status status : trendingTopic.getTweets()) {
+					System.out.println(status.getCreatedAt());
+
 					tweets.add(status);
 					x++;
-					// System.out.println(x + ":");
-					// System.out.println("@" + status.getUser().getScreenName()
-					// + ": " + status.getText());
-					// System.out.println("");
+					/*
+					 * System.out.println(x + ":"); System.out.println("@" +
+					 * status.getUser().getScreenName() + ": " +
+					 * status.getText()); System.out.println("");
+					 */
 				}
-
-				// System.out.println("---");
+				
+				model.createTrendingTopic(trendingTopic);
 
 			}
 		} catch (TwitterException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		JSONArray jsonArray = new JSONArray(tweets);
-		
+
 		file.write(jsonArray.toString());
 		file.flush();
 		file.close();
+		
+		model.save("twitter.owl");
 
 	}
 

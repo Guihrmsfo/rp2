@@ -9,9 +9,219 @@
   <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#TrendingTopic">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt38">
+    <j.0:date>2016/11/10 16:25:17</j.0:date>
+    <vcard:TITLE>#ChicagoMed</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt26">
+    <j.0:date>2016/11/09 17:02:42</j.0:date>
+    <vcard:TITLE>Thursday Night Football</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt18">
+    <j.0:date>2016/11/11 00:12:47</j.0:date>
+    <vcard:TITLE>Rules for Survival</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt16">
+    <j.0:date>2016/11/11 00:28:56</j.0:date>
+    <vcard:TITLE>Al Michaels</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt28">
+    <j.0:date>2016/11/10 08:01:01</j.0:date>
+    <vcard:TITLE>Messi</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt34">
+    <j.0:date>2016/11/10 22:00:47</j.0:date>
+    <vcard:TITLE>#ClassicRockFood</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt24">
+    <j.0:date>2016/11/09 22:27:37</j.0:date>
+    <vcard:TITLE>Robin Lopez</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt14">
+    <j.0:date>2016/11/09 14:00:07</j.0:date>
+    <vcard:TITLE>Demarcus Cousins</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt36">
+    <j.0:date>2016/11/10 23:31:54</j.0:date>
+    <vcard:TITLE>#MyClaimToFame</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt22">
+    <j.0:date>2016/11/11 02:11:56</j.0:date>
+    <vcard:TITLE>Arizona State</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt12">
+    <j.0:date>2016/11/11 00:00:15</j.0:date>
+    <vcard:TITLE>Heat</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt41">
+    <j.0:date>2016/11/11 01:37:37</j.0:date>
+    <vcard:TITLE>#FairnessMatters16</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt2">
+    <j.0:date>2016/11/11 02:01:44</j.0:date>
+    <vcard:TITLE>#HTGAWM</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt21">
+    <j.0:date>2016/11/11 02:00:10</j.0:date>
+    <vcard:TITLE>Perriman</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt43">
+    <j.0:date>2016/11/11 01:08:12</j.0:date>
+    <vcard:TITLE>#PitchPlease</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt4">
+    <j.0:date>2016/11/11 02:07:07</j.0:date>
+    <vcard:TITLE>#CLEvsBAL</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt31">
+    <j.0:date>2016/11/11 00:08:32</j.0:date>
+    <vcard:TITLE>#boycottgrubhub</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt6">
+    <j.0:date>2016/11/10 22:30:04</j.0:date>
+    <vcard:TITLE>#TopCausesOfTwitterDrama</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt8">
+    <j.0:date>2016/11/10 23:41:58</j.0:date>
+    <vcard:TITLE>The Browns</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt19">
+    <j.0:date>2016/11/11 02:11:56</j.0:date>
+    <vcard:TITLE>N'Keal Harry</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt27">
+    <j.0:date>2016/11/10 23:47:41</j.0:date>
+    <vcard:TITLE>Howard Dean</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt17">
+    <j.0:date>2016/11/11 00:00:57</j.0:date>
+    <vcard:TITLE>Ernie Johnson</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt37">
+    <j.0:date>2016/11/10 21:07:02</j.0:date>
+    <vcard:TITLE>#LegendsofTomorrow</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt29">
+    <j.0:date>2016/11/10 23:50:01</j.0:date>
+    <vcard:TITLE>#USAvROU</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt15">
+    <j.0:date>2016/11/10 18:01:44</j.0:date>
+    <vcard:TITLE>Argentina</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt39">
+    <j.0:date>2016/11/11 01:14:22</j.0:date>
+    <vcard:TITLE>#maniquinchallenge</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt13">
+    <j.0:date>2016/11/11 02:05:22</j.0:date>
+    <vcard:TITLE>Joe Thomas</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt33">
+    <j.0:date>2016/11/11 02:03:29</j.0:date>
+    <vcard:TITLE>#TheBlacklist</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt25">
+    <j.0:date>2016/11/11 00:41:23</j.0:date>
+    <vcard:TITLE>JaVale McGee</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt11">
+    <j.0:date>2016/11/11 02:19:51</j.0:date>
+    <vcard:TITLE>Justin Tucker</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt35">
+    <j.0:date>2016/11/11 00:25:23</j.0:date>
+    <vcard:TITLE>#ProjectRunway</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt1">
-    <j.0:date>2016/11/09 02:52:00</j.0:date>
-    <vcard:TITLE>#Trump</vcard:TITLE>
+    <j.0:date>2016/11/10 23:39:58</j.0:date>
+    <vcard:TITLE>Leonard Cohen</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt23">
+    <j.0:date>2016/11/10 17:30:02</j.0:date>
+    <vcard:TITLE>Trubisky</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt20">
+    <j.0:date>2016/11/11 01:15:40</j.0:date>
+    <vcard:TITLE>Alex Lewis</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt30">
+    <j.0:date>2016/11/11 02:18:12</j.0:date>
+    <vcard:TITLE>#UTAHvsASU</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt3">
+    <j.0:date>2016/11/11 02:00:18</j.0:date>
+    <vcard:TITLE>#OneLetterOffBands</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt40">
+    <j.0:date>2016/11/10 22:00:42</j.0:date>
+    <vcard:TITLE>#Superstore</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt10">
+    <j.0:date>2016/11/11 00:00:15</j.0:date>
+    <vcard:TITLE>Wade</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt32">
+    <j.0:date>2016/11/11 01:17:45</j.0:date>
+    <vcard:TITLE>#YouDontKnowIf</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt42">
+    <j.0:date>2016/11/09 22:24:52</j.0:date>
+    <vcard:TITLE>#IMPACTonPOP</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt5">
+    <j.0:date>2016/11/10 23:50:05</j.0:date>
+    <vcard:TITLE>#GreysAnatomy</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt7">
+    <j.0:date>2016/11/09 06:06:06</j.0:date>
+    <vcard:TITLE>Duke</vcard:TITLE>
+    <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt9">
+    <j.0:date>2016/11/10 22:40:02</j.0:date>
+    <vcard:TITLE>Joe Flacco</vcard:TITLE>
     <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
   </rdf:Description>
 </rdf:RDF>

@@ -1,6 +1,5 @@
 package core;
 
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -14,24 +13,32 @@ import com.hp.hpl.jena.vocabulary.VCARD;
 
 public class OntologyModel {
 
-	public static void main(String[] args) throws IOException {
-		String SOURCE = "http://www.eswc2006.org/technologies/ontology";
-		String NS = SOURCE + "#";
-		
-		OntModel model = ModelFactory.createOntologyModel();
-		OntClass trendingTopic = model.createClass( NS + "TrendingTopic" );
-		Property date = model.createProperty( NS + "date" );
-		
-		Individual tt = trendingTopic.createIndividual(NS + "tt1");
-		tt.addProperty(VCARD.TITLE, "#Trump");
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		Calendar cal = Calendar.getInstance();
-		tt.addProperty(date, dateFormat.format(cal.getTime()));
-		
-		FileWriter fw = new FileWriter("twitter.owl");
+	private static DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	private String SOURCE = "http://www.eswc2006.org/technologies/ontology";
+	private String NS = SOURCE + "#";
+	private OntModel model;
+	private OntClass trendingTopic;
+	private Property date;
+	private int trendCount;
+
+	public OntologyModel() {
+		model = ModelFactory.createOntologyModel();
+		trendingTopic = model.createClass(NS + "TrendingTopic");
+		date = model.createProperty(NS + "date");
+		trendCount = 0;
+	}
+
+	public void createTrendingTopic(TrendingTopic trend) {
+		this.trendCount++;
+		Individual tt = trendingTopic.createIndividual(NS + "tt" + this.trendCount);
+		tt.addProperty(VCARD.TITLE, trend.getName());
+		tt.addProperty(date, dateFormat.format(trend.getDate().getTime()));
+	}
+
+	public void save(String fileName) throws IOException {
+		FileWriter fw = new FileWriter(fileName);
 		model.write(fw);
 		fw.close();
-
 	}
 
 }
