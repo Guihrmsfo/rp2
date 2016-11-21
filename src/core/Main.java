@@ -1,7 +1,10 @@
 package core;
 
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +23,8 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 
-		FileWriter file = new FileWriter("tweets.json");
+		//FileWriter file = new FileWriter("tweets.json");
+		OutputStreamWriter file =  new OutputStreamWriter(new FileOutputStream("tweets.json"), StandardCharsets.UTF_8);
 
 		ConfigurationBuilder cb = new ConfigurationBuilder();
 		cb.setDebugEnabled(true).setOAuthConsumerKey(OAUTHCONSUMERKEY).setOAuthConsumerSecret(OAUTHCONSUMERSECRET)
@@ -71,8 +75,11 @@ public class Main {
 		JSONArray jsonArray = new JSONArray(tweets);
 
 		file.write(jsonArray.toString());
+		
 		file.flush();
 		file.close();
+		
+		Process p = Runtime.getRuntime().exec("python tweets.py tweets.json");
 		
 		model.save("twitter.owl");
 

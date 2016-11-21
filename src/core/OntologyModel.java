@@ -32,7 +32,9 @@ public class OntologyModel {
 		this.trendCount++;
 		Individual tt = trendingTopic.createIndividual(NS + "tt" + this.trendCount);
 		tt.addProperty(VCARD.TITLE, trend.getName());
-		tt.addProperty(date, dateFormat.format(trend.getDate().getTime()));
+		if(trend.getDate() != null){
+			tt.addProperty(date, dateFormat.format(trend.getDate().getTime()));
+		}
 	}
 
 	public void save(String fileName) throws IOException {
