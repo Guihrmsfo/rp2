@@ -1,5 +1,0 @@
-<dsig:Object Id="to-be-signed">
-      <bar:Baz>
-        
-      </bar:Baz>
-    </dsig:Object>
