@@ -17,7 +17,7 @@ stop = stopwords.words('english') + punctuation + ['rt', 'via', 'RT', 'â€™', 'â€
 count_all = Counter()
 stemmer = PorterStemmer()
 
-with open(sys.argv[1], 'r', encoding="utf8") as f:
+with open(sys.argv[1], 'r', encoding="utf8", errors='ignore') as f:
     for line in f:
         tweets = json.loads(line)
         for tweet in tweets:
@@ -38,7 +38,7 @@ for tweet in result:
 		word = stemmer.stem(word)
 		line.append(word)
 
-f = open('tweetsProcessados.txt','w')
+f = open('tweetsProcessados.txt','w', encoding='utf8')
 for linha in results:
 	f.write(' '.join(linha))
 f.close()

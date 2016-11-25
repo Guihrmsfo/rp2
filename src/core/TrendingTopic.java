@@ -22,6 +22,10 @@ public class TrendingTopic {
 		return name;
 	}
 
+	public String getFormattedName() {
+		return name.replace("#", "");
+	}
+
 	public Date getDate() {
 		return date;
 	}
