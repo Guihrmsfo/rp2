@@ -2,20 +2,13 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/twitter4j/lib/twitter4j-async-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/twitter4j/lib/twitter4j-core-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/twitter4j/lib/twitter4j-examples-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/twitter4j/lib/twitter4j-media-support-4.0.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/twitter4j/lib/twitter4j-stream-4.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/jena-2.6.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/xml-security-bin-1_0_4/libs/xml-apis.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/xml-security-bin-1_0_4/libs/xmlParserAPIs.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/arq-2.8.7.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/AbsoluteLayout.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/apache-jena-3.1.0/lib/slf4j-api-1.7.20.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/apache-jena-3.1.0/lib/slf4j-log4j12-1.7.20.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/protege.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/antlr-2.7.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/arq.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/arq-extra.jar"/>
@@ -35,11 +28,16 @@
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/log4j-1.2.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/lucene-core-2.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/owlsyntax.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/protege-owl.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/stax-api-1.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/swrl-jess-bridge.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/wstx-asl-3.0.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/edu.stanford.smi.protegex.owl/xml-apis.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/stanford-ner.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-async-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-examples-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-media-support-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-stream-4.0.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
