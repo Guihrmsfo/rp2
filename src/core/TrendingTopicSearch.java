@@ -1,11 +1,16 @@
 package core;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.charset.StandardCharsets;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import twitter4j.JSONArray;
@@ -33,11 +38,21 @@ public class TrendingTopicSearch {
 	static final TwitterFactory twitterFactory = new TwitterFactory(cb.build());
 	static final Twitter twitter = twitterFactory.getInstance();
 	static final String FOLDER_NAME = "Twitter";
+	static final double UNLIMITED = Double.POSITIVE_INFINITY;
+	static String DATE_FOLDER;
+	static String DIRECTORY;
 
-	public static void searchTrends(int trendCount, int tweetCount) throws TwitterException, IOException {
+	public static void searchTrends(double trendCount, int tweetCount) throws TwitterException, IOException {
+		// set current date
+		DATE_FOLDER = new SimpleDateFormat("d-M-Y").format(Calendar.getInstance().getTime());
+		DIRECTORY = FOLDER_NAME + File.separator + DATE_FOLDER;
+
 		// create root folder if it doesn't exist
-		File newFile = new File(FOLDER_NAME);
+		File newFile = new File(DIRECTORY);
 		if (!newFile.exists()) {
+			if (!newFile.getParentFile().exists()) {
+				newFile.getParentFile().mkdir();
+			}
 			newFile.mkdir();
 		}
 
@@ -57,7 +72,7 @@ public class TrendingTopicSearch {
 
 	}
 
-	public static QueryResult findTrendingTopicTweets(Trend trend, int tweetCount) throws TwitterException {
+	private static QueryResult findTrendingTopicTweets(Trend trend, int tweetCount) throws TwitterException {
 		// System.out.println(t.getName());
 		Query query = new Query(trend.getQuery());
 		query.setCount(tweetCount);
@@ -66,31 +81,24 @@ public class TrendingTopicSearch {
 		return twitter.search(query);
 	}
 
-	public static void saveTrendingTopic(TrendingTopic trend) throws IOException {
+	private static void saveTrendingTopic(TrendingTopic trend) throws IOException {
 		// create Trend root folder
-		File newFile = new File(FOLDER_NAME + File.separator + trend.getFormattedName());
+		String directory = DIRECTORY + File.separator + trend.getFormattedName();
+		File newFile = new File(directory);
 		newFile.mkdir();
 
-		// initialize variables
-		OntologyModel model = new OntologyModel();
-		List<Status> tweets = new ArrayList<Status>();
-
 		// output for tweets json file
-		OutputStreamWriter file = new OutputStreamWriter(
-				new FileOutputStream(
-						FOLDER_NAME + File.separator + trend.getFormattedName() + File.separator + "tweets.json"),
-				StandardCharsets.UTF_8);
+		String tweetsFileName = directory + File.separator + "tweets.json";
+		OutputStreamWriter file = new OutputStreamWriter(new FileOutputStream(tweetsFileName), StandardCharsets.UTF_8);
 
 		// add tweets to array
+		List<Status> tweets = new ArrayList<Status>();
 		for (Status status : trend.getTweets()) {
-			System.out.println(status.getCreatedAt());
 			tweets.add(status);
 		}
 
-		// create ontology individual
-		model.createTrendingTopic(trend);
-		// save ontology model
-		model.save(FOLDER_NAME + File.separator + trend.getFormattedName() + File.separator + "ontology.owl");
+		// save model
+		TrendingTopicSearch.saveOntology(trend, directory);
 
 		// save tweets
 		JSONArray jsonArray = new JSONArray(tweets);
@@ -99,7 +107,27 @@ public class TrendingTopicSearch {
 		file.close();
 
 		// text mining
-		Runtime.getRuntime().exec("python tweets.py tweets.json");
+		Process p = Runtime.getRuntime()
+				.exec("python tweets.py " + FOLDER_NAME + " \"" + trend.getFormattedName() + "\"");
+		TrendingTopicSearch.printProcessErrorLog(p.getInputStream());
+	}
+
+	private static void saveOntology(TrendingTopic trend, String directory) throws IOException {
+		String ontologyFileName = directory + File.separator + "ontology.owl";
+		OntologyModel model = new OntologyModel();
+		// create ontology individual
+		model.createTrendingTopic(trend);
+		// save ontology model
+		model.save(ontologyFileName);
+	}
+
+	private static void printProcessErrorLog(InputStream error) throws IOException {
+		InputStreamReader isrerror = new InputStreamReader(error);
+		BufferedReader bre = new BufferedReader(isrerror);
+		String line;
+		while ((line = bre.readLine()) != null) {
+			System.out.println(line);
+		}
 	}
 
 }
