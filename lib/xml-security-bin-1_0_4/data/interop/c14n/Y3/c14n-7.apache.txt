@@ -1,3 +1,0 @@
-<Parent>
-    <ns1:GrandChild xmlns:ns2="http://example.org/ns2"></ns1:GrandChild>
-  </Parent>
