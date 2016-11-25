@@ -10,7 +10,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.eswc2006.org/technologies/ontology#tt1">
-    <j.0:date>2016/11/24 23:05:00</j.0:date>
+    <j.0:date>2016/11/23 18:20:34</j.0:date>
     <vcard:TITLE>#PITvsIND</vcard:TITLE>
     <rdf:type rdf:resource="http://www.eswc2006.org/technologies/ontology#TrendingTopic"/>
   </rdf:Description>
