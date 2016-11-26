@@ -41,5 +41,6 @@
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/WebContent/WEB-INF/lib/standard-1.1.2-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/lib/twitter4j-core-4.0.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Guilherme/workspace/RP2/WebContent/WEB-INF/lib/opencloud.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
