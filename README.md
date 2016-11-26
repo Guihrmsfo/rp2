@@ -6,4 +6,5 @@ Trabalho de RP2
 - Python
 - NLTK
 - Twitter4j
-
+- Opencloud API
+- CSS tag cloud: https://codepen.io/nxworld/pen/ByGGPj
