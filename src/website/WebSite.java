@@ -7,6 +7,7 @@ import core.TrendingTopicSearch;
 
 public class WebSite {
 	static final String FOLDER_NAME = TrendingTopicSearch.FOLDER_NAME;
+	static final String TWITTER_FOLDER = TrendingTopicSearch.TWITTER_FOLDER;
 	static final String ABSOLUTE_PATH = "C:\\Users\\Guilherme\\workspace\\RP2";
 	static final String DIRECTORY = ABSOLUTE_PATH + File.separator + FOLDER_NAME;
 
@@ -20,10 +21,8 @@ public class WebSite {
 		return trendsDirectory.list();
 	}
 
-	public static TrendingTopic getTrend(String date, String trend) {
-		File trendDirectory = new File(DIRECTORY + File.separator + date + File.separator + trend);
-		TrendingTopic tt = new TrendingTopic(trend, "en");
-		return tt;
+	public static String getTrendURL(String date, String trend) {
+		return TWITTER_FOLDER + File.separator + date + File.separator + trend;
 	}
 
 }

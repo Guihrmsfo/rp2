@@ -37,7 +37,9 @@ public class TrendingTopicSearch {
 			.setOAuthAccessToken(OAUTHACCESSTOKEN).setOAuthAccessTokenSecret(OAUTHACCESSTOKENSECRET);
 	static final TwitterFactory twitterFactory = new TwitterFactory(cb.build());
 	static final Twitter twitter = twitterFactory.getInstance();
-	public static final String FOLDER_NAME = "Twitter";
+	public static final String WEBCONTENT_FOLDER = "WebContent";
+	public static final String TWITTER_FOLDER = "Twitter";
+	public static final String FOLDER_NAME = WEBCONTENT_FOLDER + File.separator + TWITTER_FOLDER;
 	static final double UNLIMITED = Double.POSITIVE_INFINITY;
 	static String DATE_FOLDER;
 	static String DIRECTORY;

@@ -25,8 +25,10 @@ public class Trend extends HttpServlet {
 			throws ServletException, IOException {
 		String date = request.getParameter("date");
 		String trendName = request.getParameter("trend");
+		String url = WebSite.getTrendURL(date, trendName);
 		request.setAttribute("trend", trendName);
 		request.setAttribute("date", date);
+		request.setAttribute("url", url);
 		request.getRequestDispatcher("trend.jsp").forward(request, response);
 	}
 

@@ -13,5 +13,10 @@
 	</a>
 	<h1>Trending Topics</h1>
 	<h2>${trend}</h2>
+	<a href="${url}\ontology.owl" target="_blank">Ontology</a>
+	<BR>
+	<a href="${url}\tweets.json" target="_blank">Tweets</a>
+	<BR>
+	<a href="${url}\words.txt" target="_blank">Words</a>
 </body>
 </html>
